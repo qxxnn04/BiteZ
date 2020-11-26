@@ -243,7 +243,7 @@ GameObject:
   - component: {fileID: 159960628}
   - component: {fileID: 159960629}
   m_Layer: 0
-  m_Name: Walker
+  m_Name: Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -275,8 +275,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 3, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0.6, z: 0}
 --- !u!114 &159960629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -289,7 +289,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa84d9e74a1761e42833c4b4835e15b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 5
+  life: 1
   damage: 5
 --- !u!1001 &520770582
 PrefabInstance:

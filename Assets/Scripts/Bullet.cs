@@ -29,13 +29,5 @@ public class Bullet : MonoBehaviour
             gameObject.SetActive(false);
         }
     }
-    void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.tag == "Enemy")
-        {
 
-            Destroy(obj: enemy.gameObject);
-
-        }
-    }
 }
