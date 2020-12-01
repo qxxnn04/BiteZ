@@ -50,6 +50,7 @@ public class Player : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
+        Debug.Log("Damage");
         if (collision.gameObject.tag == "Ammo")
         {
 
@@ -60,6 +61,7 @@ public class Player : MonoBehaviour
         }
         if (collision.gameObject.tag == "Enemy")
         {
+            
             health -= enemy.damage;
           
         }
