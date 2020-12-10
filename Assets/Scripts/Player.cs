@@ -11,6 +11,7 @@ public class Player : MonoBehaviour
     [Header("Gameplay")]
     public int initialHealth = 100;
     public int initialAmmo = 24;
+   
 
     public float knockbackForce = 10;
 
@@ -36,6 +37,7 @@ public class Player : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+            
             ObjectPoolingManager.Instance.GetBullet();
             if (ammo > 0)
             {
@@ -50,7 +52,7 @@ public class Player : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("Damage");
+       
         if (collision.gameObject.tag == "Ammo")
         {
 
@@ -61,7 +63,7 @@ public class Player : MonoBehaviour
         }
         if (collision.gameObject.tag == "Enemy")
         {
-            
+            Debug.Log("Damage");
             health -= enemy.damage;
           
         }

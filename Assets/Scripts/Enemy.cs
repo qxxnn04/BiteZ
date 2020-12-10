@@ -8,7 +8,7 @@ public class Enemy : MonoBehaviour
 {
     private Player player;
 
-    public int damage = 5;
+    public int damage = 20;
 
 
 
