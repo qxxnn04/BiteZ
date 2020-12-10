@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -55,7 +56,7 @@ public class Player : MonoBehaviour
        
         if (collision.gameObject.tag == "Ammo")
         {
-
+            Debug.Log("ammo"); 
             ammo += ammoCrate.ammo;
 
             Destroy(ammoCrate.gameObject);
@@ -63,9 +64,9 @@ public class Player : MonoBehaviour
         }
         if (collision.gameObject.tag == "Enemy")
         {
-            Debug.Log("Damage");
-            health -= enemy.damage;
-          
+
+            SceneManager.LoadScene("menu");
+
         }
 
     }
